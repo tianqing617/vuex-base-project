@@ -5,6 +5,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    count: 0,
+
     name: 'jim',
     age: 18,
     sex: 'F',
@@ -36,8 +38,14 @@ export default new Vuex.Store({
       return state.cars.find(item => item.id == id);
     },
   },
+  // 注意：Mutation 必须是同步函数，异步处理使用actions
   mutations: {
-
+    decrement(state) {
+      state.count -= 1;
+    },
+    increment (state, params) {
+      state.count += parseInt(params.num);
+    },
   },
   actions: {
 

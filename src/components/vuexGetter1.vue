@@ -3,7 +3,7 @@
     <p><span>{{info}}</span></p>
 
     <p>
-      <input type="text" v-model="carId" style="margin-right: 10px">
+      <input type="text" v-model="carId">
       <button @click="getCar()">获取车名</button>
     </p>
   </div>
