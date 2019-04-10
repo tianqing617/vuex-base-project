@@ -2,7 +2,7 @@
 <template>
   <div class="simple">
     <button @click="increment">自加</button>
-    <span>num:<b>{{num}}</b></span>
+    <span>count:<b>{{count}}</b></span>
   </div>
 </template>
 
@@ -12,13 +12,13 @@ export default {
   // state
   data() {
     return {
-      num: 1,
+      count: 1,
     }
   },
   // actions
   methods: {
     increment() {
-      this.num ++;
+      this.count ++;
     },
   },
 }
