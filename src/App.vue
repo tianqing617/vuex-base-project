@@ -16,6 +16,10 @@
     <vuex-getter1></vuex-getter1>
     <hr/>
 
+    <h3>vuex getter mapGetters 示例：</h3>
+    <vuex-getter2></vuex-getter2>
+    <hr/>
+
   </div>
 </template>
 
@@ -24,6 +28,7 @@ import simple from './components/simple.vue'
 import vuexBase1 from './components/vuexState1.vue'
 import vuexBase2 from './components/vuexState2.vue'
 import vuexGetter1 from './components/vuexGetter1.vue'
+import vuexGetter2 from './components/vuexGetter2.vue'
 
 export default {
   name: 'app',
@@ -32,6 +37,7 @@ export default {
     vuexBase1,
     vuexBase2,
     vuexGetter1,
+    vuexGetter2,
   },
 }
 </script>

@@ -26,6 +26,10 @@ export default new Vuex.Store({
     info: state => {
       return `我的名字是: ${state.name}, 我今年: ${state.age}岁, 我的性别是: ${state.sex}`;
     },
+    cars: state => {
+      const names = state.cars.map(item => item.name);
+      return names.toString();
+    },
 
     // getter也可以返回一个函数，来实现给getter传参
     getCarById: state => id => {
