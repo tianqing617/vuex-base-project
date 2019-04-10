@@ -29,6 +29,8 @@ export default {
     info: state => {
       return `name: ${state.name}, age: ${state.age}, sex: ${state.sex}`;
     }
+
+    // 说明：只有当需要声明很多computed属性时，才使用mapState，否则直接使用this.$store.state.name即可。
   })
 }
 </script>
