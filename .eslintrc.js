@@ -13,7 +13,8 @@ module.exports = {
     'comma-dangle': 'off',
     'semi': 'off',
     'eqeqeq': 'off',
-    'space-before-function-paren': 'off'
+    'space-before-function-paren': 'off',
+    'indent': 'off'
   },
   parserOptions: {
     parser: 'babel-eslint'

@@ -1,7 +1,7 @@
 <template>
   <div class="action">
     <p>
-      <button>异步自增</button>
+      <button @click="increment">异步自增</button>
       <span>{{count}}</span>
     </p>
   </div>
@@ -13,6 +13,11 @@
     computed: {
       count() {
         return this.$store.state.count;
+      },
+    },
+    methods: {
+      increment() {
+        this.$store.dispatch('decrementAsync');
       },
     },
   }
