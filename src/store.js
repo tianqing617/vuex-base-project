@@ -47,7 +47,14 @@ export default new Vuex.Store({
       state.count += parseInt(params.num);
     },
   },
+  // 说明：
+  // 1. Action 提交的是 mutation，而不是直接变更状态。
+  // 2. Action 可以包含任意异步操作。
   actions: {
-
+    incrementAsync ({ commit }) {
+      setTimeout(() => {
+        commit('increment')
+      }, 1000)
+    },
   }
 })

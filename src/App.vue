@@ -28,6 +28,10 @@
     <vuex-mutation2></vuex-mutation2>
     <hr/>
 
+    <h3>vuex action 示例：</h3>
+    <vuex-action></vuex-action>
+    <hr/>
+
   </div>
 </template>
 
@@ -39,6 +43,7 @@ import vuexGetter1 from './components/vuexGetter1.vue'
 import vuexGetter2 from './components/vuexGetter2.vue'
 import vuexMutation1 from './components/vuexMutation1.vue'
 import vuexMutation2 from './components/vuexMutation2.vue'
+import vuexAction from './components/vuexAction.vue'
 
 export default {
   name: 'app',
@@ -50,6 +55,7 @@ export default {
     vuexGetter2,
     vuexMutation1,
     vuexMutation2,
+    vuexAction,
   },
 }
 </script>
