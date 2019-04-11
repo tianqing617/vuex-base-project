@@ -56,5 +56,8 @@ export default new Vuex.Store({
         commit('decrement')
       }, 1000)
     },
-  }
+  },
+
+  // 使用module将store分割为各个模块
+  // https://vuex.vuejs.org/zh/guide/modules.html
 })
