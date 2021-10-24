@@ -18,7 +18,7 @@ export default {
   // actions
   methods: {
     increment() {
-      this.count ++;
+      this.count = this.count + 1;
     },
   },
 }
